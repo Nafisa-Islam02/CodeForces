@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int x,y,z;
-//98 99 98
+
     cin>>x>>y>>z;
     if(abs(x-y)<10 && abs(y-z)<10 && abs(x-z)<10)
     {
@@ -20,5 +20,4 @@ int main()
     }
     else cout<< "check again"<<endl;
     return 0;
-
 }
