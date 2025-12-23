@@ -1,5 +1,4 @@
 #include<iostream>
-
 using namespace std;
 
 void input(int *a,int s)
@@ -7,9 +6,9 @@ void input(int *a,int s)
     for (size_t i = 0; i < s; i++)
     {
         cin>>a[i];
-    }
-    
+    } 
 }
+
 void bubbleSort(int* a,int s)
 {
     int temp;
@@ -23,10 +22,9 @@ void bubbleSort(int* a,int s)
             a[j+1]=temp;
            }
         }
-        
     }
-
 }
+
 void zSort(int* a,int* za,int s)
 {
     int i,j,k;
@@ -46,8 +44,6 @@ void zSort(int* a,int* za,int s)
 
         }
     }
-    
-
 }
 void showzSort(int* za,int size)
 {
@@ -61,7 +57,6 @@ void showzSort(int* za,int size)
 
 int main()
 {
-
     // 8 8 4 1 3 5 6 2 1 3 6 8 2  5
     //1 8 1 8 2 8 2 6 3 6 3 5 4
     int size;
@@ -71,7 +66,5 @@ int main()
     input(arr,size);
     bubbleSort(arr,size);
     zSort(arr,zarr,size);
-   showzSort(zarr,size);
-
-
+    showzSort(zarr,size);
 }
