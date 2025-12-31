@@ -30,7 +30,7 @@ void bubbleSort(int *a,int s)
 }
 int binarySearch(int *a,int s,int t)
 {
-    int lo,hi,mid,flag=0;
+    int lo,hi,mid;
     lo=0;
     hi=s-1;
     while(lo<=hi)
